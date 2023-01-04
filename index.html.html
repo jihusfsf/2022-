@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/part1.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/echarts.min.js"></script>
+    <script src="js/echarts.js"></script>
+
+</head>
+
+<body>
+    <div class="nav">
+        <ul id="main_nav">
+            <li class="current"> <a href="Part1.html" class="link "><strong>本届热门</strong></a></li>
+            <li class="hasmore "><a href="Part2.html" class="link"><strong>本届黑马</strong></a></li>
+            <li class=""><a href="3.html" class="link"><strong>球队分析</strong></a>
+            <li class=""><a href="q.html" class="link"><strong>球迷意向</strong></a>
+            <li class=""><a href="q.html" class="link"><strong>小组赛战绩</strong></a>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div id="main" style="width: 850px;padding-top: 30px;
+        padding-left: 40px;
+        background-color: rgba(248, 248, 248, 0.85);height: 500px;margin: 0 auto;"></div>
+
+        <div class="midc">
+
+            <div class="agileits-specials-grids wbz">
+
+                <div class="c1">
+                    <div class="col-md-3 agileits-specials-grid">
+                        <div class="specials-info">
+                            <img src="images/img/g1.jpg" alt="">
+                            <div class="specials-caption">
+                                <h4>01.</h4>
+                                <a href="404.html">
+                                    <p>阿根廷国家队</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 agileits-specials-grid">
+                        <div class="specials-info">
+                            <img src="images/img/g2.jpg" alt="">
+                            <div class="specials-caption specials-info1">
+                                <h4>02.</h4>
+                                <a href="404.html">
+                                    <p>法国国家队</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 agileits-specials-grid">
+                        <div class="specials-info">
+                            <img src="images/img/g3.jpg" alt="">
+                            <div class="specials-caption">
+                                <h4>03.</h4>
+                                <a href="404.html">
+                                    <p>巴西国家队</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="c2">
+
+
+                    <div class="col-md-3 agileits-specials-grid">
+                        <div class="specials-info">
+                            <img src="images/img/g4.jpg" alt="">
+                            <div class="specials-caption">
+                                <h4>04.</h4>
+                                <a href="404.html">
+                                    <p>英格兰国家队</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 agileits-specials-grid">
+                        <div class="specials-info">
+                            <img src="images/img/g5.jpg" alt="">
+                            <div class="specials-caption specials-info1">
+                                <h4>05.</h4>
+                                <a href="404.html">
+                                    <p>葡萄牙国家队</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 agileits-specials-grid">
+                        <div class="specials-info">
+                            <img src="images/img/g1.jpg" alt="">
+                            <div class="specials-caption">
+                                <h4>06.</h4>
+                                <a href="404.html">
+                                    <p>西班牙国家队</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+    </div>
+
+    <footer>
+        <div class="copy-right-grids">
+            <div class="container">
+                <div class="copy-left">
+                    <a href="404.html">
+                        <p class="footer-gd">卡塔尔世界杯夺冠热门球队 &copy; 数据可视化2022.1.4</p>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var chartDom = document.getElementById('main');
+    var myChart = echarts.init(chartDom);
+    var option;
+
+    // prettier-ignore
+    let dataAxis = ['英格兰', '法国', '阿根廷', '巴西', '葡萄牙', '西班牙'];
+    // prettier-ignore
+    let data = [11248, 37832, 89774, 83920, 68434, 34398];
+    let yMax = 500;
+    let dataShadow = [];
+    for (let i = 0; i < data.length; i++) {
+        dataShadow.push(yMax);
+    }
+    option = {
+        title: {
+            text: '2022卡塔尔世界杯夺冠球队投票 (滚轮缩放)',
+            subtext: 'Vote for the team winning the 2022 Qatar World Cup'
+        },
+        xAxis: {
+            data: dataAxis,
+            axisLabel: {
+                inside: true,
+                color: '#fff'
+            },
+            axisTick: {
+                show: false
+            },
+            axisLine: {
+                show: false
+            },
+            z: 10
+        },
+        yAxis: {
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLabel: {
+                color: '#999'
+            }
+        },
+        dataZoom: [{
+            type: 'inside'
+        }],
+        series: [{
+            type: 'bar',
+            showBackground: true,
+            itemStyle: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#83bff6'
+                    },
+                    {
+                        offset: 0.5,
+                        color: '#188df0'
+                    },
+                    {
+                        offset: 1,
+                        color: '#188df0'
+                    }
+                ])
+            },
+            emphasis: {
+                itemStyle: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: '#2378f7'
+                        },
+                        {
+                            offset: 0.7,
+                            color: '#2378f7'
+                        },
+                        {
+                            offset: 1,
+                            color: '#83bff6'
+                        }
+                    ])
+                }
+            },
+            data: data
+        }]
+    };
+    // Enable data zoom when user click bar.
+    const zoomSize = 6;
+    myChart.on('click', function (params) {
+        console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+        myChart.dispatchAction({
+            type: 'dataZoom',
+            startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+            endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+        });
+    });
+
+    option && myChart.setOption(option);
+</script>
+
+</html>

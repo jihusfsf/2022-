@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/echarts.min.js"></script>
+    <meta name="keywords" content="" />
+
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    
+    <link href="css/font-awesome.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/2.css">
+</head>
+<body>	
+
+  
+
+
+  <div class="jarallax specials">
+
+  <div class="specials-dot">
+    
+    <div class="container">
+      <div class="agile-title specials-heading">
+        <a href="Part1.html"><h3>球民意向</h3></a>
+       
+      </div>   
+     
+      <div class="agileits-specials-grids">
+        <h1 style="margin:-45px 10px 10px -135px;font-size: 25px;color:#ffffff">球员支持率</h1>
+        <img src="images/球员2.png" alt="" width="55px" height="40px" style="margin: -78px 0px 0px -1152px">
+        <div class="col-md-3 agileits-specials-grid">
+          <div class="specials-info">
+            <img src="images/梅西.png" alt="">
+            <div class="specials-caption"> 
+              <h4>01.</h4>
+              <a href="404.html"><p>梅西</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 agileits-specials-grid">
+          <div class="specials-info">
+            <img src="images/C罗1.png" alt="">
+            <div class="specials-caption specials-info1"> 
+              <h4>02.</h4>
+              <a href="404.html"><p>C罗</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 agileits-specials-grid">
+          <div class="specials-info">
+            <img src="images/内马尔1.png" alt="">
+            <div class="specials-caption"> 
+              <h4>03.</h4>
+              <a href="404.html"><p>内马尔</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 agileits-specials-grid">
+          <div class="specials-info">
+            <img src="images/姆巴佩3.png" alt="">
+            <div class="specials-caption specials-info1"> 
+              <h4>04.</h4>
+              <a href="404.html"><p>姆巴佩</p></a>
+            </div>
+          </div>
+        </div>
+        
+
+        </div>
+        
+      </div>
+
+    </div>
+    
+    <div id="main" style="width: 1200px;height:700px;"></div>
+   
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'));
+      
+      // 指定图表的配置项和数据
+      var option = {
+      
+  title: {
+    text: '球队支持率排行榜',
+    x:50 ,
+    textStyle:{
+      fontSize: 24,
+      color:"#ffffff"
+    }
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  legend: {
+    textStyle: {
+color:'#ffffff'
+
+    }
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '10%',
+    containLabel: true,
+  left:50
+  },
+  xAxis: {
+    type: 'value',
+    boundaryGap: [0, 0.01],
+    axisLabel: {
+                                    show: true,
+                                    textStyle: {
+                                        color: '#fff'
+                                    }
+                               }
+  },
+  yAxis: {
+    type: 'category',
+
+    data: ['丹麦', '葡萄牙', '比利时', '荷兰', '德国', '英格兰','西班牙','法国','阿根廷','巴西'],
+    axisLabel: {
+                                    show: true,
+                                    textStyle: {
+                                        color: '#fff'
+                                    }
+                               }
+  },
+  
+  series: [
+   
+    {
+    
+      type: 'bar',
+      data: [3, 5,6, 7, 8, 9,10,11,15,20],
+      itemStyle:{
+        normal:{
+          color:function(params){
+            var colorList=['#62cac3','#38948e','#6f8cd7','#aa6fd8','#d86fb5','#6fd8bc','#bed86f','#d8c86f','#e5af4c','#c77474'];
+            return colorList[params.dataIndex]
+          }
+        }
+      }
+
+    }
+  ]
+};
+
+      // 使用刚指定的配置项和数据显示图表。
+     
+option && myChart.setOption(option);
+</script>     
+ <img src="images/球队2.png" alt="" width="85px" height="45px" style="margin: -1000px -400px 405px 240px">
+</div>
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="wo1">
+  <h1 style="margin:20px 10px 10px 50px;font-size: 25px;color:#f56464"">小组赛积分</h1>
+  <div class="wo3">
+    <a href="404.html"><h1 style="margin:30px 10px 10px 50px;font-size: 20px;color:#f56464"">世界杯小组赛积分榜排名计算规则</h1></a>
+    <h1 style="margin:30px 10px 10px 50px;font-size: 18px;">一、 每队胜1场得3分，平1场得1分，输1场不得分。</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">二、小组排名依次依照下列规则从多到少排列：</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">1. 小组赛总积分；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">2. 小组赛总净胜球数；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">3. 小组赛总进球数；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">如果两支或以上多支球队依照前述规则未分出排名先后，他们的排名将依照下列规则从多到少排列：</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">4. 涉及球队间相互比赛的总积分；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">5. 涉及球队间相互比赛的总净胜球数；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">6. 涉及球队间相互比赛的总进球数；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">7. 公平竞赛分数：</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">第一张黄牌：减1分；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">间接红牌（两黄变一红产生的红牌）：减3分；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">直接红牌：减4分；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">黄牌+直接红牌：减5分；</h1>
+    <h1 style="margin:0px 10px 10px 50px;font-size: 18px;">8. 由FIFA组委会抽签决定；</h1>
+
+  </div>
+<img src="images/战绩1.png" alt="" width="105px" height="40px" style="margin: -1060px -400px 420px 175px">
+<a href="404.html"><img src="images/abcdefgh.jpg" alt=""  style="margin: -640px -600px 100px 560px"></a>
+
+ 
+</div>
+
+
+</div>
+
+<footer>	
+  <div class="copy-right-grids">
+    <div class="container">
+      <div class="copy-left">
+        <a href="Part1.html"><p class="footer-gd">卡塔尔世界杯夺冠热门球队 &copy; 数据可视化2022.1.4</p></a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
