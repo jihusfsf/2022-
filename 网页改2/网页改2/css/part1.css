@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding-top: 20px;
+    background-image: url(../img/bc.jpg);
+    background-size: 100%;
+    height: 1300px;
+    /* opacity: 0.5; */
+    margin: 0 auto;
+}
+
+.col-md-3 {
+    height: 260px;
+
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midc {
+    width: 90%;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-left: 300px;
+}
+
+.c1 {
+    width: 100%;
+    float: left;
+}
+
+.specials-info img {
+    height: 230px;
+}
+
+
+.header {
+    color: white;
+    height: 129px;
+    background: #666666 center repeat-y;
+    width: 100%;
+    position: relative;
+    z-index: 3000;
+}
+
+.nav {
+    height: 76px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2000;
+
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    height: 76px;
+    width: 990px;
+    margin: 0px auto;
+}
+
+.nav ul li {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    height: 76px;
+}
+
+.nav ul li a.link {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    padding: 0px 24px;
+    height: 76px;
+    line-height: 76px;
+    font-size: 18px;
+    color: #444;
+    font-family: Microsoft Yahei, 黑体;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav ul li a.link strong {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    height: 76px;
+}
+
+.nav ul li a.link:hover strong {
+    cursor: pointer;
+}
+
+.nav ul li.current a strong {
+    border-bottom: 4px solid black;
+    height: 72px;
+    overflow: hidden;
+}
+
+.nav ul li.on a.link {
+    background: #fafafa;
+}
+
+.nav ul li a strong:hover {
+    height: 72px;
+    border-bottom: 4px solid black;
+}

@@ -1,0 +1,169 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #1e1e1e;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+background: antiquewhite;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, figure, header, nav, section, article, aside, footer, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, figure, header, nav, section, article, aside, footer, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+.ban1{
+    max-width: 1380px;
+}
+.ban1{
+    margin-left: 50px;
+    top: 20px;
+    background: #1e1e1e;
+    width: 1370px;
+    height: 3100px;
+    text-align: center;
+}
+.ban2{
+float: left;
+    background: rgb(255, 254, 254,0.4);
+    height: 621px;
+    width: 330px;
+    margin-left:15px;
+    margin-top: 70px;
+}
+.ban3{
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 1000px;
+    height: 650px;
+    opacity: 60%;
+    background-color: rgba(247, 247, 247, 0.612);
+}
+.ban4{
+    margin-left: 10px;
+    margin-top: 30px;
+    width: 980px;
+    height: 600px;
+    background-color: aliceblue;
+}
+.tu img{
+    width: 330px;
+    height: 550px;
+    top: 20px;
+    margin-left: 0px;
+    padding: 0px;
+}
+.ban1.ban2.nei{
+    background-color: #1e1e1e;
+    width: 100px;
+    height: 100px;
+}
+.tu{
+    width: 330px;
+    height: 550px;
+display: flex;
+position: relative;
+left: 0;
+}
+.ban2{
+    overflow: hidden;
+}
+.zi {
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+}
+.z1 h1{
+    top: 30px;
+}
+.zi h1 em
+{
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    width: 80%;
+    list-style: circle;
+    font-style: normal;
+    top: 20px;
+}
+.zi2{
+    margin-left: 140px;
+    width: 700px;
+    height: 1100px;
+    
+}
+
+.ban5{
+    float: left ;
+    margin-left: 210px; 
+    width: 1000px;
+    height: 2000px;
+    text-align: center;
+    color: #fff;
+}
+.jian{
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    float: left;
+}
+.jian2{
+    width: 100%;
+    height: 50px;
+}
+.zi3{
+    color: red;
+}
+.jian3{
+    width: 100%;
+    height: 100px;
+}
+.ban6{
+    
+    color: blue;
+    width: 980px;
+    height: 600px;
+}
+.ban7{
+    margin-left: 80px;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+}
+.ban7 img{
+    width: 100%;
+    
+}
+.hei{
+    background: rgba(0, 0,0, 0.2);
+    padding: 1em;
+    left: 0px;
+    height: 60px;
+    width: 100%
+  
+}
